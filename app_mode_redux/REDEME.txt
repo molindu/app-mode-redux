@@ -1,0 +1,12 @@
+navigation without the navigation prop used
+dark mode ligt mode used
+
+when use modes keep change MainActivity.java with elow code (this code helps to live changed with app modes)
+
+@Override
+  public void onConfigurationChanged(Configuration newConfig){
+    super.onConfigurationChanged(newConfig);
+    getReactInstanceManager().onConfigurationChanged(this, newConfig);
+  }
+
+  this code put into main class
